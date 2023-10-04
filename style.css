@@ -7,6 +7,7 @@
     --font-color:           #0A1522;
     --secondary-font-color: #62666a;
     --highlight-color:      #00B3CC;
+    --hover-color:          #50c6d6;
     --main-font:            'Roboto', sans-serif;
     --font-pair:            'Raleway', sans-serif; 
   }
@@ -51,35 +52,44 @@
 
 
 h2 {
-    font-size: 1.5rem;
+    font-family: var(--font-pair);
+    font-size: 1.8rem;
+    font-weight: 600;
     text-transform: uppercase;
     padding-top: 4rem;
 }
 
-h3 {
-    font-size: 1.1rem;
+h4 {
+    font-size: 1.2rem;
     padding-bottom: 4rem;
+    color: var(--secondary-font-color)
 }
 
 .link {
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 .megrendelolap__link {
     text-decoration: none;
-    color: var(--highlight-color);
+    font-family: var(--font-pair);
+    color: var(--font-color);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: var(--highlight-color);
+    padding: 1rem;
+    border-radius: 9999px;
 }
+
 
 .megrendelolap__link:hover {
-    transform: scale(105%);
+    background-color: var(--hover-color) 
 }
 
-.footer__designed {
-    text-align: center;
-}
-
-.footer__header {
-    padding-top: 2rem;
+.information__text {
+    font-size: 1rem;
+    color: var(--highlight-color);
+    padding-top: 4rem;
 }
 
 html, body {
@@ -98,3 +108,64 @@ html, body {
     flex-shrink: 0;
   }
 
+.contact {
+    padding-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1;
+    justify-content: space-evenly;
+}
+
+.contact__photo, .contact__gift {
+    width: 40%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;;
+}
+
+.contact__logo--va {
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+    padding-top:1rem;
+}
+
+.contact__logo--rg {
+    width: 140px;
+    padding-top: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.gift__icon {
+    width: 50px;
+}
+
+.photo__icon {
+    width: 50px;
+}
+
+.fb__icon {
+    width: 20px;
+}
+
+.gift__link {
+    text-decoration: none;
+    color: var(--hover-color);
+}
+
+
+
+.fb__link--va, .fb__link--rg {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.designed__logo {
+    width: 100px;
+}
+
+.footer__designed {
+    font-size: 10px;
+}

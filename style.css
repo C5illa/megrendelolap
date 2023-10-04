@@ -1,0 +1,100 @@
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+:root {
+    --bg-color:             #DEEBF3;
+    --font-color:           #0A1522;
+    --secondary-font-color: #62666a;
+    --highlight-color:      #00B3CC;
+    --main-font:            'Roboto', sans-serif;
+    --font-pair:            'Raleway', sans-serif; 
+  }
+  
+  
+  
+  
+  
+  /*------------------------------------*\
+  #BOX-SIZING
+  \*------------------------------------*/
+  
+  * {  box-sizing: border-box;  }
+  
+  
+  
+  
+  
+  /*------------------------------------*\
+  #FONTS
+  \*------------------------------------*/
+  
+  body {
+    font-family: var(--main-font);
+    color: var(--font-color);
+    text-align: center;
+  }
+
+
+
+
+    
+  /*------------------------------------*\
+  #BODY
+  \*------------------------------------*/
+
+  body {
+    margin: 0 auto;
+    width: 100vw;
+    background-color: var(--bg-color);
+  }
+
+
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-top: 4rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    padding-bottom: 4rem;
+}
+
+.link {
+    padding-top: 2rem;
+}
+
+.megrendelolap__link {
+    text-decoration: none;
+    color: var(--highlight-color);
+}
+
+.megrendelolap__link:hover {
+    transform: scale(105%);
+}
+
+.footer__designed {
+    text-align: center;
+}
+
+.footer__header {
+    padding-top: 2rem;
+}
+
+html, body {
+    height: 100%;
+  }
+ body {
+    display: flex;
+    flex-direction: column;
+  }
+
+.content {
+    flex: 1 0 auto;
+  }
+
+.footer {
+    flex-shrink: 0;
+  }
+

@@ -89,7 +89,7 @@ h4 {
 .information__text {
     font-size: 1rem;
     color: var(--highlight-color);
-    padding-top: 4rem;
+    padding-top: 6rem;
 }
 
 html, body {
@@ -109,20 +109,25 @@ html, body {
   }
 
 .contact {
-    padding-top: 3rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex: 1 1;
-    justify-content: space-evenly;
+    padding-top: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    place-items: stretch;
 }
 
 .contact__photo, .contact__gift {
-    width: 40%;
     background-color: white;
     padding: 2rem;
-    border-radius: 20px;;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+
+.contact__photo:hover, .contact__gift:hover {
+    transform: scale(1.01);
+    }
 
 .contact__logo--va {
     display: block;
@@ -155,7 +160,10 @@ html, body {
     color: var(--hover-color);
 }
 
-
+.gift__link--text {
+    padding-top: 1rem;
+    font-size: .8rem;
+}
 
 .fb__link--va, .fb__link--rg {
     text-decoration: none;
@@ -168,4 +176,11 @@ html, body {
 
 .footer__designed {
     font-size: 10px;
+}
+
+
+@media (min-width: 600px) {
+ .contact {
+ 
+}
 }

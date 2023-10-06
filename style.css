@@ -69,6 +69,12 @@ h4 {
     padding-top: 3rem;
 }
 
+.contact > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .megrendelolap__link {
     text-decoration: none;
     font-family: var(--font-pair);
@@ -141,7 +147,6 @@ h4 {
 
 .gift__link:hover {
     color: #DEEBF3;
-    cursor: default;
 }
 
 .gift__link--text {

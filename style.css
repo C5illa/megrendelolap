@@ -50,7 +50,6 @@
     background-color: var(--bg-color);
   }
 
-
 h2 {
     font-family: var(--font-pair);
     font-size: 1.8rem;
@@ -62,6 +61,7 @@ h2 {
 h4 {
     font-size: 1.2rem;
     padding-bottom: 4rem;
+    padding-top: .5rem;
     color: var(--secondary-font-color)
 }
 
@@ -92,30 +92,16 @@ h4 {
     padding-top: 6rem;
 }
 
-html, body {
-    height: 100%;
-  }
- body {
-    display: flex;
-    flex-direction: column;
-  }
-
-.content {
-    flex: 1 0 auto;
-  }
-
-.footer {
-    flex-shrink: 0;
-  }
-
 .contact {
     padding-top: 1.5rem;
-    width: 80%;
+    width: 70vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 50px;
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 70px;
     place-items: stretch;
+    cursor: pointer;
 }
 
 .contact__photo, .contact__gift {
@@ -143,21 +129,19 @@ html, body {
     margin: 0 auto;
 }
 
-.gift__icon {
+.gift__icon, .photo__icon {
     width: 50px;
-}
-
-.photo__icon {
-    width: 50px;
-}
-
-.fb__icon {
-    width: 20px;
+    padding-bottom: 1rem;
 }
 
 .gift__link {
     text-decoration: none;
-    color: var(--hover-color);
+    color: var(--highlight-color);
+}
+
+.gift__link:hover {
+    color: #DEEBF3;
+    cursor: default;
 }
 
 .gift__link--text {
@@ -165,15 +149,15 @@ html, body {
     font-size: .8rem;
 }
 
-.fb__link--va, .fb__link--rg {
-    text-decoration: none;
-    color: var(--font-color);
+@media (max-width: 860px) {
+  
+.contact {
+  display:grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 30px;
+  place-items: stretch;
+  padding-bottom: 2rem;
 }
 
-.designed__logo {
-    width: 100px;
-}
-
-.footer__designed {
-    font-size: 10px;
 }

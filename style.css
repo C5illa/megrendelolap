@@ -3,155 +3,155 @@
 \*------------------------------------*/
 
 :root {
-    --bg-color:             #DEEBF3;
-    --font-color:           #0A1522;
-    --secondary-font-color: #62666a;
-    --highlight-color:      #00B3CC;
-    --hover-color:          #50c6d6;
-    --main-font:            'Roboto', sans-serif;
-    --font-pair:            'Raleway', sans-serif; 
-  }
+  --bg-color:             #DEEBF3;
+  --font-color:           #0A1522;
+  --secondary-font-color: #62666a;
+  --highlight-color:      #00B3CC;
+  --hover-color:          #50c6d6;
+  --main-font:            'Roboto', sans-serif;
+  --font-pair:            'Raleway', sans-serif; 
+}
   
   
   
   
   
-  /*------------------------------------*\
-  #BOX-SIZING
-  \*------------------------------------*/
+/*------------------------------------*\
+#BOX-SIZING
+\*------------------------------------*/
   
-  * {  box-sizing: border-box;  }
-  
-  
+ * {  box-sizing: border-box;  }
   
   
   
-  /*------------------------------------*\
-  #FONTS
-  \*------------------------------------*/
   
-  body {
-    font-family: var(--main-font);
-    color: var(--font-color);
-    text-align: center;
+  
+/*------------------------------------*\
+#FONTS
+\*------------------------------------*/
+  
+body {
+  font-family: var(--main-font);
+  color: var(--font-color);
+  text-align: center;
   }
 
 
 
 
     
-  /*------------------------------------*\
-  #BODY
-  \*------------------------------------*/
+/*------------------------------------*\
+#BODY
+\*------------------------------------*/
 
   body {
-    margin: 0 auto;
-    width: 100vw;
-    background-color: var(--bg-color);
+  margin: 0 auto;
+  width: 100vw;
+  background-color: var(--bg-color);
   }
 
 h2 {
-    font-family: var(--font-pair);
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding-top: 4rem;
+  font-family: var(--font-pair);
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 4rem;
 }
 
 h4 {
-    font-size: 1.2rem;
-    padding-bottom: 4rem;
-    padding-top: .5rem;
-    color: var(--secondary-font-color)
+  font-size: 1.2rem;
+  padding-bottom: 4rem;
+  padding-top: .5rem;
+  color: var(--secondary-font-color)
 }
 
 .link {
-    padding-top: 3rem;
+  padding-top: 3rem;
 }
 
 .contact > a {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .megrendelolap__link {
-    text-decoration: none;
-    font-family: var(--font-pair);
-    color: var(--font-color);
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 600;
-    background-color: var(--highlight-color);
-    padding: 1rem;
-    border-radius: 9999px;
+  text-decoration: none;
+  font-family: var(--font-pair);
+  color: var(--font-color);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: var(--highlight-color);
+  padding: 1rem;
+  border-radius: 9999px;
 }
 
 
 .megrendelolap__link:hover {
-    background-color: var(--hover-color) 
+  background-color: var(--hover-color) 
 }
 
 .information__text {
-    font-size: 1rem;
-    color: var(--highlight-color);
-    padding-top: 6rem;
+  font-size: 1rem;
+  color: var(--highlight-color);
+  padding-top: 6rem;
 }
 
 .contact {
-    padding-top: 1.5rem;
-    width: 70vw;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    column-gap: 70px;
-    place-items: stretch;
-    cursor: pointer;
+  padding-top: 1.5rem;
+  width: 70vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 70px;
+  place-items: stretch;
+  cursor: pointer;
 }
 
 .contact__photo, .contact__gift {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .contact__photo:hover, .contact__gift:hover {
-    transform: scale(1.01);
+  transform: scale(1.01);
     }
 
 .contact__logo--va {
-    display: block;
-    width: 120px;
-    margin: 0 auto;
-    padding-top:1rem;
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+  padding-top:1rem;
 }
 
 .contact__logo--rg {
-    width: 140px;
-    padding-top: 1rem;
-    display: block;
-    margin: 0 auto;
+  width: 140px;
+  padding-top: 1rem;
+  display: block;
+  margin: 0 auto;
 }
 
 .gift__icon, .photo__icon {
-    width: 50px;
-    padding-bottom: 1rem;
+  width: 50px;
+  padding-bottom: 1rem;
 }
 
 .gift__link {
-    text-decoration: none;
-    color: var(--highlight-color);
+  text-decoration: none;
+  color: var(--highlight-color);
 }
 
 .gift__link:hover {
-    color: #DEEBF3;
+  color: #b1d6ee;
 }
 
 .gift__link--text {
-    padding-top: 1rem;
-    font-size: .8rem;
+  padding-top: 1rem;
+  font-size: .8rem;
 }
 
 @media (max-width: 860px) {

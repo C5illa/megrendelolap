@@ -118,8 +118,8 @@ h4 {
 }
 
 .contact__photo:hover, .contact__gift:hover {
-  transform: scale(1.01);
-    }
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 
 .contact__logo--va {
   display: block;

@@ -118,6 +118,7 @@ h4 {
 }
 
 .contact__photo:hover, .contact__gift:hover {
+  transform: translateX(-1px) translateY(-1px);
   box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
